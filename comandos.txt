@@ -1,0 +1,2 @@
+npm install -g npm para instalar o npm
+npx create-react-app . para instalar o react
