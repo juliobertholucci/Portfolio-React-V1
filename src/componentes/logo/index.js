@@ -1,4 +1,5 @@
 import logo from '../../imagens/JB.png'
+import './style-logo.css'
 function Logo() { //criar uma função e inserir o código dentro do return
     return(
         <div className='header-logo'>
