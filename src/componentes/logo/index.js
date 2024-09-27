@@ -8,4 +8,4 @@ function Logo() { //criar uma função e inserir o código dentro do return
     )
 }
 
-export default Logo; 
+export default Logo; //exportando componente para o restante do código
