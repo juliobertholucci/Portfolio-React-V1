@@ -1,4 +1,4 @@
-import Header from './componentes/Header/'
+import Header from './componentes/Header/';
 import styled from 'styled-components';
 {/*Cria uma variável e atribui o styled.div. Styled pode atribuir outras tags como p, h1, header etc*/} 
 const AppContainer = styled.div`    
