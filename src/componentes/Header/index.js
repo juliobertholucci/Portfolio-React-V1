@@ -1,13 +1,20 @@
 import Logo from '../../componentes/logo/'
 import HeaderMenu from '../../componentes/header-menu';
-import './style.css'
+import styled from 'styled-components';
+
+const HeaderContainer = styled.header`
+    background-color: #fff;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+`
 
 function Header (){
     return(
-    <header className="App-header">
+    <HeaderContainer>
         <Logo/> {/* utilização do componente criado e exportado */}
         <HeaderMenu/>
-    </header>
+    </HeaderContainer>
 )}
 
 export default Header;
