@@ -1,11 +1,29 @@
 import logo from '../../imagens/JB.png'
-import './style-logo.css'
+import styled from 'styled-components';
+
+const HeaderLogoContainer = styled.div`
+  display: flex;
+`
+const HeaderImage = styled.img`
+  width:70px;
+  height:70px;
+`
+const HeaderLogoName = styled.p`
+  font-size: 20px;
+  margin-left: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+`
+
+
 function Logo() { //criar uma função e inserir o código dentro do return
     return(
-        <div className='header-logo'>
-          <img src={logo} width={'70px'} height={'70px'} alt='logotipo'></img>
-          <p className='header-logo-name'>Julio <strong>Bertholucci</strong></p>
-        </div>
+        <HeaderLogoContainer>
+          <HeaderImage src={logo} alt='logotipo'></HeaderImage>
+          <HeaderLogoName>Julio <strong>Bertholucci</strong></HeaderLogoName>
+        </HeaderLogoContainer>
     )
 }
 
