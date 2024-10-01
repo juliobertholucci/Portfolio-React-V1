@@ -30,7 +30,7 @@ function SearchBar(){
     return(
         <SectionSearch>
             <Title>Encontre o que procura aqui:</Title>  
-            <SubTitle>Portfólio, formações, visão etc...</SubTitle>
+            <SubTitle>Portfólio, formações, habilidades etc...</SubTitle>
             <Input placeholder="Digite nesse campo" onBlur={evento => setTextoDigitado(evento.target.value)}/>
             <p>{textoDigitado}</p>  {/*evento contém um objeto com as infos do evento onBlur|| .target é uma referencia ao elemento de disparo do onblur */}
         </SectionSearch>
