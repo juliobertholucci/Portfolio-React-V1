@@ -1,6 +1,6 @@
 import Input from "../Input"
 import styled from "styled-components"
-
+import {useState} from 'react'
 const Title = styled.h1`
     color:#fff;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -25,11 +25,14 @@ const SectionSearch = styled.section`
 `
 
 function SearchBar(){
+    const [textoDigitado, setTextoDigitado] = useState('') 
+    {/*setTextoDigitado tras o que foi digitado e salva em textoDigitado*/}
     return(
         <SectionSearch>
-            <Title>Encontre o que procura aqui:</Title>
+            <Title>Encontre o que procura aqui:</Title>  
             <SubTitle>Portfólio, formações, visão etc...</SubTitle>
-            <Input placeholder="Digite nesse campo"/>
+            <Input placeholder="Digite nesse campo" onBlur={evento => setTextoDigitado(evento.target.value)}/>
+            <p>{textoDigitado}</p>  {/*evento contém um objeto com as infos do evento onBlur|| .target é uma referencia ao elemento de disparo do onblur */}
         </SectionSearch>
     )
 }
