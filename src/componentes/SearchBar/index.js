@@ -1,6 +1,7 @@
 import Input from "../Input"
 import styled from "styled-components"
 import {useState} from 'react'
+import {pesquisas} from '../SearchBar'
 const Title = styled.h1`
     color:#fff;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
