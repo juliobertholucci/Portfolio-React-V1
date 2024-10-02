@@ -1,8 +1,10 @@
-const pesquisas = [
-    {nome: 'Formações', id: 1, conteudo: ''},
-    {nome: 'Habilidades', id: 2, conteudo: ''},
-    {nome: 'Portfólio', id: 3, conteudo: ''},
-    {nome: 'Sobre Mim', id: 4, conteudo: ''},
-    {nome: 'Contato', id: 5, conteudo: ''}
+export const pesquisas = [
+    {nome: "FORMAÇÕES", id: 1, conteudo: "aa"},
+    {nome: "HABILIDADES", id: 2, conteudo: "aa"},
+    {nome: "PORTFÓLIO", id: 3, conteudo: "aa"},
+    {nome: "SOBRE MIM", id: 4, conteudo: "aa"},
+    {nome: "CONTATO", id: 5, conteudo: "aa"},
 ]
+
+
 
