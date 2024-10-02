@@ -6,7 +6,6 @@ const AppContainer = styled.div`
     max-width: 100vw; /*view width*/
     height: 100vh; /*view height*/
     background-color: #282f32;
-
   li{
     list-style: none;
   }
