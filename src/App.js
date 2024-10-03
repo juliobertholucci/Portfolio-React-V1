@@ -1,6 +1,7 @@
 import Header from './componentes/Header/';
 import SearchBar from './componentes/SearchBar'
 import Contents from './componentes/Contents'
+import Card from './componentes/Card';
 import styled from 'styled-components';
 {/*Cria uma variável e atribui o styled.div. Styled pode atribuir outras tags como p, h1, header etc*/} 
 const AppContainer = styled.div`    
@@ -18,6 +19,7 @@ function App() {
       <Header/>
       <SearchBar/>
       <Contents/>
+      <Card title="Meus Perfis" link1="https://www.linkedin.com/in/julio-bertholucci-b78a37237/" link2 = "https://www.behance.net/juliobertholucci" />
     </AppContainer>
   );
 }

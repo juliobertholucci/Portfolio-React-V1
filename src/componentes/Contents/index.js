@@ -1,12 +1,15 @@
 import {content} from './contentsData'
 import styled from 'styled-components'
-
+import Card from '../Card'
 const SectionContent = styled.section`
     max-width:100vw;
-    height:60vh;
+    
     background-color:#fff;
     display:flex;
     align-items:center;
+    justify-content:center;
+    margin:0;
+    padding:0;
 `
 
 const SectionShowContent = styled.div`
