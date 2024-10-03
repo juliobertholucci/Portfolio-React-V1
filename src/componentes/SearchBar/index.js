@@ -6,7 +6,7 @@ import {pesquisas} from '../SearchBar/dadosSearch'
 const Title = styled.h1`
     color:${props => props.color || "#000"};
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size:36px;
+    font-size:30px;
     margin:0;
 `
 const SubTitle = styled.h2`
@@ -48,7 +48,7 @@ function SearchBar(){
     return(
         <SectionSearch>
             <Title color="#fff">Encontre o que procura aqui:</Title>  
-            <SubTitle color="#fff" fontSize="20px">Portfólio, formações, habilidades etc...</SubTitle>
+            <SubTitle color="#fff" fontSize="20px">Habilidades, formações, sobre mim e contato...</SubTitle>
             <Input placeholder="Digite nesse campo" onBlur={handleInputChange}/>
             {dadosPesquisados.map(dado => ( //agora é realizado um map, percorrendo o array que foi passado pelo estado e exibindo abaixo
                 <SectionShowSearch key={dado.id}>
