@@ -3,7 +3,7 @@ import styled from "styled-components"
 import {useState} from 'react'
 import {pesquisas} from '../SearchBar/dadosSearch'
 const Title = styled.h1`
-    color:#fff;
+    color:${props => props.color || "#000"};
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size:36px;
     margin:0;
@@ -11,7 +11,7 @@ const Title = styled.h1`
 const SubTitle = styled.h2`
     color: #fff;;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size:20px;
+    font-size:${props => props.fontSize};
     margin:25px 0px;
 `
 const SectionSearch = styled.section`
@@ -27,7 +27,7 @@ const SectionShowSearch = styled.div`
     height: auto;
     width: 50vw;
     margin-top:30px;
-    background-color: #fff;
+    background-color: #656565;
     padding:30px;
     border:3px solid #656565;
     border-radius:10px;
@@ -47,8 +47,8 @@ function SearchBar(){
     };
     return(
         <SectionSearch>
-            <Title>Encontre o que procura aqui:</Title>  
-            <SubTitle>Portfólio, formações, habilidades etc...</SubTitle>
+            <Title color="#fff">Encontre o que procura aqui:</Title>  
+            <SubTitle fontSize="20px">Portfólio, formações, habilidades etc...</SubTitle>
             <Input placeholder="Digite nesse campo" onBlur={handleInputChange}/>
             {dadosPesquisados.map(dado => ( //agora é realizado um map, percorrendo o array que foi passado pelo estado e exibindo abaixo
                 <SectionShowSearch key={dado.id}>
