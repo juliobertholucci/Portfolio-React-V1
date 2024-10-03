@@ -1,5 +1,6 @@
 import Input from "../Input"
 import styled from "styled-components"
+import imageBack from "../../imagens/imagem-fundo.jpg"
 import {useState} from 'react'
 import {pesquisas} from '../SearchBar/dadosSearch'
 const Title = styled.h1`
@@ -9,7 +10,7 @@ const Title = styled.h1`
     margin:0;
 `
 const SubTitle = styled.h2`
-    color: #fff;;
+    color:${props => props.color || "#000"};
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size:${props => props.fontSize};
     margin:25px 0px;
@@ -22,16 +23,15 @@ const SectionSearch = styled.section`
     flex-direction: column;
     justify-content: center; /* Centraliza verticalmente */
     align-items: center; /* Centraliza horizontalmente */
+    background-image: url("${imageBack}");
 `
 const SectionShowSearch = styled.div`  
     height: auto;
     width: 50vw;
     margin-top:30px;
-    background-color: #656565;
+    background-color: #fff;
     padding:30px;
-    border:3px solid #656565;
-    border-radius:10px;
-    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 `
 function SearchBar(){
     
@@ -48,7 +48,7 @@ function SearchBar(){
     return(
         <SectionSearch>
             <Title color="#fff">Encontre o que procura aqui:</Title>  
-            <SubTitle fontSize="20px">Portfólio, formações, habilidades etc...</SubTitle>
+            <SubTitle color="#fff" fontSize="20px">Portfólio, formações, habilidades etc...</SubTitle>
             <Input placeholder="Digite nesse campo" onBlur={handleInputChange}/>
             {dadosPesquisados.map(dado => ( //agora é realizado um map, percorrendo o array que foi passado pelo estado e exibindo abaixo
                 <SectionShowSearch key={dado.id}>

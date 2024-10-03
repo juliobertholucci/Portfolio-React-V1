@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import Card from '../Card'
 const SectionContent = styled.section`
     max-width:100vw;
-    
     background-color:#fff;
     display:flex;
     align-items:center;

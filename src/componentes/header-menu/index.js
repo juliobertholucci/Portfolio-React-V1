@@ -29,7 +29,7 @@ const HeaderMenuIcon = styled.li `
 const HeaderMenuContainer = styled.ul`
   display: flex;
 `
-const menuItems = ['Sobre Mim', 'Hard Skills', 'Soft Skills', 'Contato'];
+const menuItems = ['Sobre Mim', 'Formações', 'Habilidades', 'Contato'];
 const menuIcons = [LoginIcon, CartIcon] //cria um array com os componentes que queremos exibir
 function HeaderMenu () {
     return(
