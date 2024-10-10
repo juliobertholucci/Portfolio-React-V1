@@ -1,0 +1,3 @@
+npm install -g npm para instalar o npm
+npx create-react-app . para instalar o react
+npm install styled-components para instalar o styled components
