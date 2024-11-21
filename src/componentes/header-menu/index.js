@@ -1,6 +1,7 @@
 import LoginIcon from '../../imagens/login-alt.svg'
 import CartIcon from '../../imagens/cart-icon.svg'
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const HeaderMenuItem = styled.li`
     text-align: center;
@@ -35,7 +36,9 @@ function HeaderMenu () {
     return(
         <HeaderMenuContainer>
           {menuItems.map((item) => (
-            <HeaderMenuItem><a>{item}</a></HeaderMenuItem>
+            <HeaderMenuItem>
+              <Link to="/habilidades"><p>{item}</p></Link>
+            </HeaderMenuItem>
           ))}
           {menuIcons.map((icon) => ( //utilizamos um map que lê o array e retorna um outro array, exibindo os icones
             <HeaderMenuIcon><img alt='' src={icon}></img></HeaderMenuIcon>
