@@ -30,14 +30,14 @@ const HeaderMenuIcon = styled.li `
 const HeaderMenuContainer = styled.ul`
   display: flex;
 `
-const menuItems = ['Sobre Mim', 'Formações', 'Habilidades', 'Contato'];
+const menuItems = ['Sobre', 'Formações', 'Habilidades', 'Contato'];
 const menuIcons = [LoginIcon, CartIcon] //cria um array com os componentes que queremos exibir
 function HeaderMenu () {
     return(
         <HeaderMenuContainer>
           {menuItems.map((item) => (
             <HeaderMenuItem>
-              <Link to="/habilidades"><p>{item}</p></Link>
+              <Link to={`/${item.toLowerCase()}`}><p>{item}</p></Link>
             </HeaderMenuItem>
           ))}
           {menuIcons.map((icon) => ( //utilizamos um map que lê o array e retorna um outro array, exibindo os icones
