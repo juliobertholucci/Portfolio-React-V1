@@ -4,7 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createGlobalStyle } from 'styled-components';
+<<<<<<< HEAD
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+=======
+>>>>>>> 1cb36b299fcf660b2674e5ad99568ee7aacf00f2
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -26,12 +29,16 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <GlobalStyle/>
+<<<<<<< HEAD
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<App/>}/>
         <Route path='/habilidades/' element={<p>Oi</p>}/>
       </Routes>
     </BrowserRouter>
+=======
+    <App />
+>>>>>>> 1cb36b299fcf660b2674e5ad99568ee7aacf00f2
   </React.StrictMode>
 );
 
